@@ -1,0 +1,8 @@
+# Convert image to black and white
+from PIL import Image
+# pip install Pillow
+
+img = Image.open('me.JPG')
+blackAndWhite = img.convert("L")
+blackAndWhite.save('bw_me.JPG')
+blackAndWhite.show()
